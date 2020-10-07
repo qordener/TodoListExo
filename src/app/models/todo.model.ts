@@ -1,7 +1,6 @@
-import { Interface } from 'readline';
-
 export interface Todo {
   id: number;
   title: string;
+  isDone: boolean;
   description?: string;
 }

@@ -5,15 +5,18 @@ const initialState: Todo[] = [
   {
     id: 0,
     title: 'Todo 1',
+    isDone: false,
     description: 'Test description',
   },
   {
     id: 1,
     title: 'Todo 2',
+    isDone: false,
     description: 'Test description',
   },
   {
     id: 3,
+    isDone: true,
     title: 'Todo 3',
   },
 ];

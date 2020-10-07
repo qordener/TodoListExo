@@ -1,0 +1,13 @@
+<mat-card class="todo-list">
+  <mat-card-header>
+    <mat-card-title>Todo list</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-card *ngFor="let todo of todos | async" class="todo-block">
+      <a [routerLink]="['todos', todo.id]" [ngClass]="{ done: todo.isDone }">
+        {{ todo.title }}
+      </a>
+      <mat-checkbox [(ngModel)]="todo.isDone"></mat-checkbox>
+    </mat-card>
+  </mat-card-content>
+</mat-card>
